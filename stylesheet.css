@@ -1,0 +1,274 @@
+stylesheet.css
+/* Global Styles */
+
+:root {
+  --primary: white;
+  --secondary: black;
+  --accent: #f0810f;
+  --detail: #436e86;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+{
+  border: 1px solid red;
+}
+
+body {
+  /* Font Styles */
+  Font-Family: 'Overpass';
+  Font-Size: 17px;
+  line-height: 1.6;
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin: 0;
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+
+/* Layout */
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+/* Font Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Permanent Marker', Cursive;
+}
+
+h1 {
+  Font-Size: 3rem;
+  color: black;
+  margin-bottom: 5px;
+}
+
+h2 {
+  Font-Size: 25px;
+  color: black;
+  font-family: 'Permanent Marker', Cursive;
+}
+
+h3 {
+  Font-Size: 15px;
+  color: black;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+a {
+  color: var(--primary);
+}
+
+b {
+  color: var(--secondary);
+}
+
+b:hover {
+  color: var(--detail);
+}
+
+p {
+  color: #343434;
+}
+
+/* Nav */
+
+.nav-bar {
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.logo {
+  font-family: Overpass;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  border-bottom: 1 solid transparent;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    z-index: 10;
+  }
+
+  .logo {
+    border-bottom: 0;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav.internal {
+  background: #3e3e3e;
+  text-align: center;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  max-height: 75vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero .headline-container {
+  font-family: 'Permanent Marker', Cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 1.2em;
+  font-family: 'Permanent Marker', Cursive;
+  font-weight: 100;
+  letter-spacing: 4px;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    color: white;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Layout Style */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+img {
+  width: 50%;
+}
+
+.rezepte {
+  text-align: center;
+}
+
+
+ul {
+  padding-inline-start: 1em;
+}
+
+ol {
+  padding-inline-start: 1em;
+}
+
+a3 {
+  Font-Family: 'Permanent Marker', Cursive;
+  Font-Size: 20px;
+  color: #343434;
+}
+
+a4 {
+  Font-Family: 'Permanent Marker', Cursive;
+  Font-Size: 20px;
+  color: #7a8450;
+}
+
+hr {
+  border-bottom: 0;
+  border-top: 1px solid #7a8450;
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+div {
+  display: block;
+}
+
+.rezept {
+  margin-left: 2em;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  Font-Family: 'Permanent Marker', Cursive;
+  Font-Size: 22px;
+  color: #7a8450;
+}
